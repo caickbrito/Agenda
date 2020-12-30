@@ -1,0 +1,31 @@
+{
+  "name": "Sistema de login - Agenda de contatos",
+  "description": "Sistema utilizando a arquitetura de projeto MVC, com a linguagem PHP e banco de dados Mysql",
+  "authors": [{
+    "name": "Caick Brito",
+    "email": "cbdeveloper3@gmail.com",
+    "role": "Developer"
+  }
+  ],
+
+  "config": {
+    "vendor-dir": "vendor"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "coffeecode/datalayer": "1.1.7",
+    "coffeecode/router": "1.0.*",
+    "phpmailer/phpmailer": "~6.0",
+    "league/plates": "v4.0.0-alpha",
+    "coffeecode/paginator": "1.0.*"
+  }
+}
